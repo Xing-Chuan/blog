@@ -23,3 +23,9 @@ Don't make promises when you're joyful. Don't reply when you're sad. Don't make 
 The shortest distance between two people is a smile. 
 
 人与人之间最短的距离是微笑。
+
+- 2017-4-26 17:15:53
+
+Never regret. If it's good, it's wonderful. If it's bad, it's experience. 
+
+不必遗憾。若是美好，叫做精彩。若是糟糕，叫做经历。

@@ -43,7 +43,6 @@ let x = 'hello';
 （2）全局常量和线程安全
 在 let  和 const  之间，建议优先使用 const  ，尤其是在全局环境，不
 应该设置变量，只应设置常量。这符合函数式编程思想，有利于将来的分布
-503
 式运算。
 
 ```
@@ -63,7 +62,6 @@ const  声明常量还有两个好处，一是阅读代码的人立刻会意识�
 长远来看，JavaScript可能会有多线程的实现（比如Intel的River Trail那一类的
 项目），这时 let  表示的变量，只应出现在单线程运行的代码中，不能是
 多线程共享的，这样有利于保证线程安全。
-504
 字符串
 静态字符串一律使用单引号或反引号，不使用双引号。动态字符串使用反引
 号。
@@ -119,14 +117,12 @@ function processInput(input) {
 return [left, right, top, bottom];
 }
 // good
-506
 function processInput(input) {
 return { left, right, top, bottom };
 }
 const { left, right } = processInput(input);
 ```
 
-507
 对象
 单行定义的对象，最后一个成员不以逗号结尾。多行定义的对象，最后一个
 成员以逗号结尾。
@@ -167,7 +163,6 @@ a.x = 3;
 ```
 // bad
 const obj = {
-508
 id: 5,
 name: 'San Francisco',
 };
@@ -206,7 +201,6 @@ return atom.value + value;
 };
 ```
 
-509
 数组
 使用扩展运算符（...）拷贝数组。
 
@@ -229,7 +223,6 @@ const foo = document.querySelectorAll('.foo');
 const nodes = Array.from(foo);
 ```
 
-510
 函数
 立即执行函数可以写成箭头函数的形式。
 
@@ -271,7 +264,6 @@ const boundMethod = (...params) => method.apply(this,
 params);
 ```
 
-511
 简单的、单行的、不会复用的函数，建议采用箭头函数。如果函数体较为复
 杂，行数较多，还是应该采用传统的函数写法。
 所有配置项都应该集中在一个对象，放在最后一个参数，布尔值不可以直接
@@ -315,7 +307,6 @@ function handleThings(opts = {}) {
 ```
 
 }
-512
 Map结构
 注意区分Object和Map，只有模拟现实世界的实体对象时，才使用Object。如
 果只是需要 key: value  的数据结构，使用Map结构。因为Map有内建的遍

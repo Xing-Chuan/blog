@@ -29,3 +29,9 @@ The shortest distance between two people is a smile.
 Never regret. If it's good, it's wonderful. If it's bad, it's experience. 
 
 不必遗憾。若是美好，叫做精彩。若是糟糕，叫做经历。
+
+- 2017-4-27 11:10:00
+
+It doesn't matter if the guy is perfect or the girl is perfect, as long as they are perfect for each other. - Good Will Hunting 
+
+那个小伙子是否完美，或者那个姑娘是否完美都不重要，只要他们能珠联璧合。——《骄阳似我》

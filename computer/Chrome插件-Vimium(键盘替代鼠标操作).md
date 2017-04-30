@@ -83,13 +83,3 @@ F6:自动选中当前url
 
 
 
-
----
-
-作者 : 纪行川
-
-网志:  [行川草庐](http://jixingchuan.com/  )   **jixingchuan.com**
-
-邮箱 : contact@jixingchuan.com
-
-声明 : 网站内容可自由转载 , 转载请附上原文链接及出处

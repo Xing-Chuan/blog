@@ -35,3 +35,10 @@ Never regret. If it's good, it's wonderful. If it's bad, it's experience.
 It doesn't matter if the guy is perfect or the girl is perfect, as long as they are perfect for each other. - Good Will Hunting 
 
 那个小伙子是否完美，或者那个姑娘是否完美都不重要，只要他们能珠联璧合。——《骄阳似我》
+
+- 2017-5-1 10:47:14
+
+People who agonize don't act. People who act don't agonize.– Pierre Sauvage 
+
+痛苦的人不采取行动，采取行动的人不痛苦。– 皮尔·索瓦格
+

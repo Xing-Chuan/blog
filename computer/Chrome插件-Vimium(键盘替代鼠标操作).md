@@ -1,6 +1,6 @@
 ---
 title: Chrome插件-Vimium(键盘替代鼠标操作)
-tags: [Chrome插件]
+tags: [chrome]
 date: 2017-4-29 10:17:54
 categories: 电脑就该这么用
 ---

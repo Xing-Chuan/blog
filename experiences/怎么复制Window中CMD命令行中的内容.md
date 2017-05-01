@@ -2,7 +2,7 @@
 title: 怎么复制Window中CMD命令行中的内容
 tags: [terminal]
 date: 2017-2-4 12:51:43
-categories: experiences
+categories: computer
 ---
 
 

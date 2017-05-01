@@ -2,7 +2,7 @@
 title: Harmony(ES3.1改版)学习总结
 tags: [Harmony,ES3.1]
 date: 2016-6-10 09:53:44
-categories: Javascript
+categories: JavaScript
 ---
 
 ## 变量声明

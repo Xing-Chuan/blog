@@ -2,7 +2,7 @@
 title: Apple ID更换主显邮箱后不能注销iCloud账号
 tags: [Apple ID,iCloud]
 date: 2016-7-2 20:57:11
-categories: experiences
+categories: computer
 ---
 
 

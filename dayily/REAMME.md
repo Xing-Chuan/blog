@@ -42,3 +42,10 @@ People who agonize don't act. People who act don't agonize.– Pierre Sauvage
 
 痛苦的人不采取行动，采取行动的人不痛苦。– 皮尔·索瓦格
 
+- 2017-5-2 17:28:01
+
+Imperfection is beauty, madness is genius and it's better to be absolutely ridiculous than absolutely boring. - Marilyn Monroe 
+
+不完美也是一种美，疯狂也是天分，荒唐总好过无聊。——玛丽莲梦露
+
+附一: 只有疯狂到认为自己能改变世界的人，才能真正的改变世界。——乔布斯

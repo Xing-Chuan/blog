@@ -49,3 +49,17 @@ Imperfection is beauty, madness is genius and it's better to be absolutely ridic
 不完美也是一种美，疯狂也是天分，荒唐总好过无聊。——玛丽莲梦露
 
 附一: 只有疯狂到认为自己能改变世界的人，才能真正的改变世界。——乔布斯
+
+- 2017-5-3 21:42:11
+
+Don't worry too much about the ambiguous future; just make the effort for the explicit present. 
+
+不为模糊的未来过分担忧，只为眼前的现在奋发图强。
+
+- 2017-5-6 22:54:12
+
+Don't say you don't have enough time.You have exactly the same number of hours per day that were given to Helen Keller, Louis Pasteur, Michelangelo, Thomas Jefferson and Albert Einstein. 
+
+不要说你时间不够，你每天被付予的小时数和海伦凯勒、巴士德、米开朗基罗、杰弗逊、及爱因斯坦完全一样。
+
+我荒废了时间，时间便把我荒废了。——莎士比亚

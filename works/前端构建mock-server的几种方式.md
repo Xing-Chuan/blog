@@ -3,7 +3,7 @@ title: 前端构建mock-server的几种方式
 tags:
   - mock
 categories: works
-date: 2017-05-02 22:36:29
+date: 2017-05-02 22:47:29
 ---
 
 这里收集一些用来构建 mock-server 的方式:

@@ -5,7 +5,7 @@ tags:
   - nodeType
   - nodeValue
 categories: JavaScript
-date: 2017-05-02 22:47:43
+date: 2017-05-02 22:36:43
 ---
 
 ### nodeName

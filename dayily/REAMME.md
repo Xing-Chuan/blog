@@ -63,3 +63,9 @@ Don't say you don't have enough time.You have exactly the same number of hours p
 不要说你时间不够，你每天被付予的小时数和海伦凯勒、巴士德、米开朗基罗、杰弗逊、及爱因斯坦完全一样。
 
 我荒废了时间，时间便把我荒废了。——莎士比亚
+
+- 2017-5-7 22:32:55
+
+Death is nothing, but to live defeated and inglorious is to die daily. - Napoleon Bonaparte 
+
+死不算什么，但失败或不光采的活着如同每天死亡。——拿破仑

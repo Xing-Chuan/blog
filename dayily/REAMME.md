@@ -69,3 +69,9 @@ Don't say you don't have enough time.You have exactly the same number of hours p
 Death is nothing, but to live defeated and inglorious is to die daily. - Napoleon Bonaparte 
 
 死不算什么，但失败或不光采的活着如同每天死亡。——拿破仑
+
+- 2017-5-8 21:29:36
+
+Knowledge will give you power, but character respect. - Bruce Lee 
+
+知识给你力量，品格给你别人的尊敬。——李小龙

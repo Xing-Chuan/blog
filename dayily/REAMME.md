@@ -75,3 +75,9 @@ Death is nothing, but to live defeated and inglorious is to die daily. - Napoleo
 Knowledge will give you power, but character respect. - Bruce Lee 
 
 知识给你力量，品格给你别人的尊敬。——李小龙
+
+- 2017-5-9 22:02:11
+
+Don't lie to people who trust you, and don't trust people who lie to you. 
+
+不要对相信你的人撒谎，也不要相信对你撒谎的人。

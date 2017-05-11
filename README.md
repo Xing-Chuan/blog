@@ -5,7 +5,7 @@ date: 2017-4-18 23:39:06
 
 Hello Everyone:
 
-This is Xing-Chuan's blog.
+This is Xing-Chuan's blog. " Xing-Chuan's cottage "
 
 Blog site : http://www.jixingchuan.com/ 
 

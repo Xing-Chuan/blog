@@ -81,3 +81,15 @@ Knowledge will give you power, but character respect. - Bruce Lee
 Don't lie to people who trust you, and don't trust people who lie to you. 
 
 不要对相信你的人撒谎，也不要相信对你撒谎的人。
+
+- 2017-5-10 20:29:28
+
+The higher we soar the smaller we appear to those who cannot fly.  
+
+我们飞得越高在那些不能飞的人眼中的形象就越渺小。
+
+- 2017-5-11 16:26:57
+
+Change your life today. Don’t gamble on the future, act now, without delay.
+
+改变从今天开始. 不要把期望放在明天. -西蒙·波娃 

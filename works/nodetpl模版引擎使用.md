@@ -7,6 +7,28 @@ categories: works
 date: 2017-05-09 22:23:46
 ---
 
+## nodetpl 关键字
+
+- <? ?> nodetpl 定界符
+- $ROOT 模版中 HTML 代码需要包裹在 id 为 $ROOT 的元素中
+- ROOT 在 script 标签中使用, 相当于 document.getElementById('$ROOT')
+- $SUBROOT 多模版, 子模版 HTML 用 id 为 $SUBROOT 的元素包裹
+- SUBROOT 多模版, 在子模版 script 标签内使用.
+- $DATA 传入模版中的数据挂载在 $DATA 下
+- = 纯文本渲染, 放 XSS
+- == HTML, JS 代码会实际渲染
+- include 引入 tpl 模版
+- template 多模版, 单模版用 template包裹
+- main 多模版, 主模版需设置 name="main"
+- nodetpl.config 配置
+- nodetpl.get 渲染, 可指定 url
+- nodetpl.render 渲染模版代码, 一般手动拼接
+- nodetpl.exec 执行模版中的 js 代码
+- --extname 拓展名, 默认 .tpl
+- --encoding 预编译指定编码
+- --watch 预编译实时监视
+- --nostrict 预编译不使用严格模式
+
 ## 起步 Demo
 
 ### 引入文件
@@ -62,27 +84,6 @@ nodetpl.get('tpls/test.tpl', data, function(d){
 </ul>
 ```
 
-## nodetpl 关键字
-
-- <? ?> nodetp 定界符
-- $ROOT 模版中 HTML 代码需要包裹在 id 为 $ROOT 的元素中
-- ROOT 在 script 标签中使用, 相当于 document.getElementById('$ROOT')
-- $SUBROOT 多模版, 子模版 HTML 用 id 为 $SUBROOT 的元素包裹
-- SUBROOT 多模版, 在子模版 script 标签内使用.
-- $DATA 传入模版中的数据挂载在 $DATA 下
-- = 纯文本渲染, 放 XSS
-- == HTML, JS 代码会实际渲染
-- include 引入 tpl 模版
-- template 多模版, 单模版用 template包裹
-- main 多模版, 主模版需设置 name="main"
-- nodetpl.config 配置
-- nodetpl.get 渲染, 可指定 url
-- nodetpl.render 渲染模版代码, 一般手动拼接
-- nodetpl.exec 执行模版中的 js 代码
-- --extname 拓展名, 默认 .tpl
-- --encoding 预编译指定编码
-- --watch 预编译实时监视
-- --nostrict 预编译不使用严格模式
 
 ## nodetpl API
 

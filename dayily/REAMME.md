@@ -93,3 +93,9 @@ The higher we soar the smaller we appear to those who cannot fly.
 Change your life today. Don’t gamble on the future, act now, without delay.
 
 改变从今天开始. 不要把期望放在明天. -西蒙·波娃 
+
+- 2017-5-14 20:11:40
+
+An intellectual is a man who says a simple thing in a difficult way; an artist is a man who says a difficult thing in a simple way.
+
+一个知识分子把一件简单的事描述的很复杂, 艺术家则相反.

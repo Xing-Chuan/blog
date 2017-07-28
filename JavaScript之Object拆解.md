@@ -209,11 +209,11 @@ Reflect.ownKeys返回一个数组，包含对象自身的所有属性，不管�
 - 其次遍历所有属性名为字符串的属性，按照生成时间排序
 - 最后遍历所有属性名为 Symbol 值的属性，按照生成时间排序
 
-#### __proto__, Object.getPrototypeOf(), Object.setPrototypeOf()
+#### `__proto__`, Object.getPrototypeOf(), Object.setPrototypeOf()
 
-##### __proto__
+##### `__proto__`
 
-__proto__ 指向当前实例的原型对象, 其没有被 ES6 列为正式 API, 但因为被浏览器厂商广泛使用, 被收入附录.
+`__proto__` 指向当前实例的原型对象, 其没有被 ES6 列为正式 API, 但因为被浏览器厂商广泛使用, 被收入附录.
 
 某些浏览器厂商同样指向原型对象, 可能是另一种命名方式, 所以为了兼容性考虑, 最好不要通过它去操作原型.
 
@@ -310,8 +310,20 @@ ES5 中 Object.getOwnPropertyDescriptor(obj, property) 可以获取对象属性�
 
 ES8 中 新增了 Object.getOwnPropertyDescriptors(obj) 可以获取对象所有属性的描述对象, 描述对象包括 get 和 set 属性.
 
+#### Null 传导运算符
 
+我们要读取对象的一个属性或调用其方法, 为了不报错, 应该先判断对象是否存在, 然后再读取其属性.
 
+如果我们想读取 obj.info.xingchuan.name, 安全的写法应该是下面这样
 
+```js
+let name = obj && obj.info && obj.info.xingchuan && obj.info.xingchuan.name || 'default';
+```
+
+现在提案中引入了 Null 传导运算符, 简化了写法, 可以写为下面这种方式.
+
+```js
+let name = obj ?. info ?. xingchuan ?. name || 'default';
+```
 
 

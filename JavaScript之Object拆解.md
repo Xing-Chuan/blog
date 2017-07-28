@@ -16,20 +16,20 @@ new Function() instanceof Object // true
 
 下面我们一起来拆解下 Object 的方法和新 Api:
 
-### 类型判断
+## 类型判断
 
 
 
 
-### Object原型上的方法
+## Object原型上的方法
 
 
 
 
 
-### ES6 之后的新特性
+## ES6 之后的新特性
 
-#### 对象属性的简洁写法
+### 对象属性的简洁写法
 
 > 简洁的写法可以减少代码量也可以更加优雅, 但代码是给计算机看的, 同时也是给人看的, 容易发生歧义的地方一定要注意.
 
@@ -73,7 +73,7 @@ let obj = {
 };
 ```
 
-#### 字面量形式定义对象
+### 字面量形式定义对象
 
 ES5只支持这种字面量定义:
 
@@ -100,7 +100,7 @@ let obj ={
 - 属性名表达式为对象时属性名会重复的问题
 
 
-#### Object.is('','') 同值相等API
+### Object.is('','') 同值相等API
 
 `Object.is()` 基本等同于 `===` , 除却两点:
 
@@ -111,7 +111,7 @@ NaN === NaN // false
 Object.is(+0, -0) // false
 Object.is(NaN, NaN) // true
 ```
-#### Object.assign(target, source1, source2) 复制可枚举属性
+### Object.assign(target, source1, source2) 复制可枚举属性
 
 ```js
 let target = {
@@ -141,7 +141,7 @@ Object.assign(target, source1, source2);
 //
 ```
 
-#### 属性的可枚举性
+### 属性的可枚举性
 
 每个对象属性都有一个描述对象 Description , 可以控制是否可被枚举.
 
@@ -181,7 +181,7 @@ Object.getOwnPropertyDescriptor([1,2,3],'length');
 
 另外, ES6 中也规定了 Class 原型上的方法是不可枚举的.
 
-#### 属性的遍历
+### 属性的遍历
 
 1. for...in
 
@@ -209,15 +209,15 @@ Reflect.ownKeys返回一个数组，包含对象自身的所有属性，不管�
 - 其次遍历所有属性名为字符串的属性，按照生成时间排序
 - 最后遍历所有属性名为 Symbol 值的属性，按照生成时间排序
 
-#### `__proto__`, Object.getPrototypeOf(), Object.setPrototypeOf()
+### `__proto__`, Object.getPrototypeOf(), Object.setPrototypeOf()
 
-##### `__proto__`
+#### `__proto__`
 
 `__proto__` 指向当前实例的原型对象, 其没有被 ES6 列为正式 API, 但因为被浏览器厂商广泛使用, 被收入附录.
 
 某些浏览器厂商同样指向原型对象, 可能是另一种命名方式, 所以为了兼容性考虑, 最好不要通过它去操作原型.
 
-##### Object.setPrototypeOf()
+#### Object.setPrototypeOf()
 
 Object.setPrototypeOf() 是 ES6 设置原型对象的方法
 
@@ -238,11 +238,11 @@ obj.z // 40
 
 // 因原型链访问顺序的优先级, obj.x 为 10 而不是 20, 如 obj 不存在 x 的属性, obj.x 就会为 20.
 ```
-##### Object.getPrototypeOf()
+#### Object.getPrototypeOf()
 
 Object.getPrototypeOf(obj) 是 ES6 返回原型对象的方法
 
-#### Object.keys(), Object.values(), Object.entries()
+### Object.keys(), Object.values(), Object.entries()
 
 Object.keys() 是 ES5 中遍历属性的方法, ES6 新增了 Object.values(), Object.entries().
 
@@ -254,11 +254,11 @@ Object.keys() 是 ES5 中遍历属性的方法, ES6 新增了 Object.values(), O
 
 返回对象自身的(不包含继承的), 可枚举的键值对数组
 
-#### 对象的拓展运算符
+### 对象的拓展运算符
 
 ES8 中将数组的拓展运算符引入到了对象中.
 
-##### 解构
+#### 解构
 
 ```js
 let {a, b, ...x} = {a: 1, b:2, c: 3, d: 4};
@@ -271,21 +271,21 @@ console.log(x);
 2. 拓展运算符必须置为最后一个位置, 否则会报错
 3. 拓展运算符不会复制原型上的方法
 
-##### 克隆对象
+#### 克隆对象
 
 ```js
 let x = {name: 'XingChuan', age: 88};
 let cloneObj = { ...x };
 ```
 
-##### 合并对象
+#### 合并对象
 
 ```js
 let x = {name: 'XingChuan', age: 88};
 let y = {job: 'developer'};
 let cloneObj = { ...x, ...y };
 ```
-##### 拓展运算符表达式
+#### 拓展运算符表达式
 
 ```js
 let obj = { ...{x > 1 ? {a: 1} : {} } };
@@ -304,13 +304,13 @@ let runtimeError = {
 };
 ```
 
-#### Object.getOwnPropertyDescriptors()
+### Object.getOwnPropertyDescriptors()
 
 ES5 中 Object.getOwnPropertyDescriptor(obj, property) 可以获取对象属性的描述对象.
 
 ES8 中 新增了 Object.getOwnPropertyDescriptors(obj) 可以获取对象所有属性的描述对象, 描述对象包括 get 和 set 属性.
 
-#### Null 传导运算符
+### Null 传导运算符
 
 我们要读取对象的一个属性或调用其方法, 为了不报错, 应该先判断对象是否存在, 然后再读取其属性.
 

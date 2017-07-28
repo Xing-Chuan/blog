@@ -258,6 +258,8 @@ Object.keys() 是 ES5 中遍历属性的方法, ES6 新增了 Object.values(), O
 
 ES8 中将数组的拓展运算符引入到了对象中.
 
+##### 解构
+
 ```js
 let {a, b, ...x} = {a: 1, b:2, c: 3, d: 4};
 console.log(x);
@@ -269,7 +271,47 @@ console.log(x);
 2. 拓展运算符必须置为最后一个位置, 否则会报错
 3. 拓展运算符不会复制原型上的方法
 
+##### 克隆对象
 
-#### 1
-#### 1
-#### 1
+```js
+let x = {name: 'XingChuan', age: 88};
+let cloneObj = { ...x };
+```
+
+##### 合并对象
+
+```js
+let x = {name: 'XingChuan', age: 88};
+let y = {job: 'developer'};
+let cloneObj = { ...x, ...y };
+```
+##### 拓展运算符表达式
+
+```js
+let obj = { ...{x > 1 ? {a: 1} : {} } };
+```
+
+扩展运算符的参数对象之中，如果有取值函数get，这个函数是会执行的.
+
+```js
+let runtimeError = {
+  ...a,
+  ...{
+    get x() {
+      throws new Error('thrown now');
+    }
+  }
+};
+```
+
+#### Object.getOwnPropertyDescriptors()
+
+ES5 中 Object.getOwnPropertyDescriptor(obj, property) 可以获取对象属性的描述对象.
+
+ES8 中 新增了 Object.getOwnPropertyDescriptors(obj) 可以获取对象所有属性的描述对象, 描述对象包括 get 和 set 属性.
+
+
+
+
+
+

@@ -633,4 +633,9 @@ let name = obj && obj.info && obj.info.xingchuan && obj.info.xingchuan.name || '
 let name = obj ?. info ?. xingchuan ?. name || 'default';
 ```
 
+## 参考资料
 
+- MDN
+- JavaScript高级程序设计
+- ECMAScript入门
+- JavaScript忍者禁术

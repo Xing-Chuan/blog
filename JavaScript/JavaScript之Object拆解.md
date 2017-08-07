@@ -6,18 +6,7 @@ categories: JavaScript
 date: 2017-07-26 19:17:56
 ---
 
-JavaScript是一门基于对象的语言, 关于基于对象和面向对象的差异, 我曾看到这样的比喻:
-
-- 基于对象，就是一个工程师建了一栋房子，然后其它的工程师按照这个房子的样子去建造其它的房子
-- 面向对象，就是一个工程师再图纸上设计出一栋房子的样子，然后其它工程师按照这个图纸的设计去建造房子
-
-也就是说:
-
-- 基于对象是先有一个具体的对象，然后在这个对象的基础上创建新的对象
-- 面向对象就是先有一个抽象的对象描述，然后以此为蓝本构建具体对象
-
-JavaScript 中这个具体的对象就是 Object.
-下面, 让我们一起来拆解下 Object 相关联的属性、方法和 ES6 后新 Api 吧:
+让我们一起来拆解一下 Object 相关联的属性、方法和 ES6 后新 Api 吧:
 
 ## 属性类型
 
@@ -111,7 +100,7 @@ let info1 = new Info();
 let info2 = new Info();
 console.log(info1.name); // XingChuan
 console.log(info1.age); // 10
-console.log(info2.name); // XingChuans
+console.log(info2.name); // XingChuan
 console.log(info2.age); // 10
 ```
 
@@ -216,6 +205,7 @@ console.dir(document.getElementsByTagName('span')[0] instanceof Object);
 - 函数的 `prototype` 都是基于 `Object.prototype`
 - Function 也是自己的实例
 - 一切起源于 `Object.prototype`
+- 每个原型都有 `constructor` 属性, 指向原型所属的函数, 用字面量对象改为原型的引用, 会丢失 `constructor` 这个属性
 
 
 来张示意图结尾( 侵删 ):
@@ -229,7 +219,7 @@ console.dir(document.getElementsByTagName('span')[0] instanceof Object);
 在讨论 this 指向的问题之前, 先要明确一下, 在严格模式下, 未指定环境对象而调用函数，则 this 值不会转型为 window.
 除非明确把函数添加到某个对象或者调用 apply()或 call()，否则 this 值将是 undefined.
 
-1. 普通函数中的 this
+- 普通函数中的 this
 
 ```js
 let x = 1;
@@ -240,7 +230,7 @@ show(); // 1
 ```
 普通函数中的 this 指向 window
 
-2. 构造函数中的 this
+- 构造函数中的 this
 
 ```js
 function Info(){
@@ -249,10 +239,10 @@ function Info(){
 let info1 = new Info();
 console.log(info1.x); // 1
 ```
-构造函数中的 this 指向 new 出来的实例对象
+构造函数中的 this 指向 new 出来的实例对象, new 这个操作符会改变 this 的指向.
 
 
-3. 对象方法中的 this
+- 对象方法中的 this
 
 ```js
 let x = 2;
@@ -267,7 +257,7 @@ obj.y(); // 1
 对象方法中的 this 指向调用它的对象.
 ```
 
-4. call、apply、bind(ES5) 中的 this
+- call、apply、bind(ES5) 中的 this
 
 call、apply、bind(ES5) 的作用就是改变 this 的指向, this 会指向第一个参数.
 
@@ -275,15 +265,21 @@ call、apply、bind(ES5) 的作用就是改变 this 的指向, this 会指向第
 
 bind 只会改变 this 的指向, 并不会执行方法, call 和 apply 则会改变指向时也执行方法.
 
-5. 事件函数中的 this
+- 事件函数中的 this
 
 事件函数中的 this 指向绑定事件的元素.
 
-6. 箭头函数中的 this
+- 箭头函数中的 this
 
-箭头函数是 ES6 中新增的方法, 不同于其他情况中的 this 在调用时才决定指向, 箭头函数 this 的指向与其身处的环境有关, 一般是指向身处的对象, 如果身处在如定时函数中, this 的指向就是 window 了.
+箭头函数是 ES6 中新增的方法, 不同于其他情况中的 this 在调用时才决定指向, 箭头函数 this 指向定义时的外围, 在不确认指向的情况下, 请慎用.
 
-
+```bash
+ECMAScript 6 入门对箭头函数的使用限制做了说明:
+（1）函数体内的this对象，就是定义时所在的对象，而不是使用时所在的对象。
+（2）不可以当作构造函数，也就是说，不可以使用new命令，否则会抛出一个错误。
+（3）不可以使用arguments对象，该对象在函数体内不存在。如果要用，可以用Rest参数代替。
+（4）不可以使用yield命令，因此箭头函数不能用作Generator函数。
+```
 
 ## 数据类型判断
 
@@ -307,7 +303,7 @@ typeof []
 typeof {}
 // "object"
 ```
-typeof 只对一些简单数据类型有效, 为了可以判断各种内置对象, 我们需要采取一些'手段', 使用 Object 原型上的 toString 方法.
+typeof 只对一些简单数据类型有效, 为了可以判断各种内置对象, 我们需要采取一些 `手段` , 使用 Object 原型上的 toString 方法.
 
 ```js
 Object.prototype.toString.call(1);
@@ -637,5 +633,7 @@ let name = obj ?. info ?. xingchuan ?. name || 'default';
 
 - MDN
 - JavaScript高级程序设计
-- ECMAScript入门
+- ECMAScript6入门
 - JavaScript忍者禁术
+
+

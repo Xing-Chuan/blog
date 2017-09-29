@@ -1,26 +1,27 @@
-  ---
+---
 title: JavaScript之正则表达式入门(基本语法与应用)
 tags:
-  - tags
-categories: categories
+  - 正则
+  - 正则表达式
+categories: JavaScript
 date: 2017-08-15 09:20:09
 ---
 
 ## 简述
 
-正则出现的频率并不高, 出现时却有`尚方宝剑`的效果, 能一招见效, 达成目的, 是我们拿来精准匹配和替换文本的利器.
+正则出现的频率并不高, 出现时却有`尚方宝剑`的效果, 能一招见效, 达成目的, 是我们拿来精准匹配、替换文本的利器.
 
 正则表达式的实现最早来自 Unix 系统, 并不是 JS 一家独有, 而是一套通用语法, 各家实现略有不同.
 
 虽说目前 JS 技术发展迅速, 但很多部分都是借鉴其他语言的特性和框架发展而来的.
 
-很多人对正则头痛, 常常写匹配时忘记语法如何写了. 😂
+很多人对正则头痛, 常常写匹配时忘记语法如何写了, 我也经常这样. 😂
 
 掌握语法并不难, 难在灵活运用啊. 🤔
 
 复杂度较高的正则, 阅读性很低, 例如 `/^[-a-z0-9~!$%^&*_=+}{\'?]+(\.[-a-z0-9~!$%^&*_=+}{\'?]+)*@([a-z0-9_][-a-z0-9_]*(\.[-a-z0-9_]+)*\.(aero|arpa|biz|com|coop|edu|gov|info|int|mil|museum|name|net|org|pro|travel|mobi|[a-z][a-z])|([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}))(:[0-9]{1,5})?$/i` , 这是一段邮箱认证的正则, 我是看的要吐血了 🙄
 
-本文来探讨下 JS 和正则相关的 Api 和一些应用.
+本文来探讨下正则语法的使用和相关的 Api.
 
 ## 基本语法
 
@@ -235,7 +236,8 @@ str.replace(/o/gi, 0) // "Hell0 W0rld"
 
 replace 的第二个参数也可以是函数, 参数有如下这些
 
-| 参数       | 代表的数值                                                                                                      |
+|    参数    |                                                   代表的数值                                                    |
+|------------|-----------------------------------------------------------------------------------------------------------------|
 | match      | 匹配的子字符串                                                                                                  |
 | p1,p2, ... | 匹配的每个字符串                                                                                                |
 | offset     | 匹配到的子字符串在原字符串中的偏移量。（比如，如果原字符串是“abcd”，匹配到的子字符串是“bc”，那么这个参数将是1） |
@@ -262,10 +264,10 @@ var newString = 'abc12345#$*%'.replace(/([^\d]*)(\d*)([^\w]*)/, replacer); // 'a
 ```js
 // 交换字符串中的两个单词
 var re = /(\w+)\s(\w+)/;
-var str = "John Smith";
+var str = "xing chuan";
 var newstr = str.replace(re, "$2, $1");
 console.log(newstr);
-// Smith, John
+// chuan, xing
 ```
 
 #### String.prototype.split
@@ -273,10 +275,10 @@ console.log(newstr);
 split 的参数可以用字符串和正则表达式匹配
 
 ```js
-let str = 'HellosWorld';
-str.split(/s/); // ["Hello", "World"]
+let str = `hello, welcome to     xingchuan's home!`;
+let arr = str.split(/[\s]+/);
+console.log(arr);
 ```
-
 
 ## 一些应用
 
@@ -339,7 +341,10 @@ let str = "http://xccl.cc/";
 console.log(re.test(str));
 ```
 
+正则可以做的事太多了, 大家慢慢研究吧 🌝
+
 ## 参考资料
 
 - W3C
 - MDN
+

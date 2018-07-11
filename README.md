@@ -1,14 +1,10 @@
----
-title: Github README
-date: 2017-4-18 23:39:06
----
 
-各位好:
+近期将博客从 Hexo 迁移到 Typecho ，托管到自己的服务器上，相应文章也录入到博客系统。
 
-这里是 XingChuan 的博客,【行川草庐】.
+闲来无事，写写网志 (*/ω＼*)
 
-博客地址: www.xing-chuan.com
+行川的网络日志：https://www.xing-chuan.com/
 
-这里是我博客的源文件, 你可以免费使用.
+简书：https://www.jianshu.com/u/01c2879aa7dc
 
-你的 `star` 是我持续开源的动力.
+掘金：https://juejin.im/user/58c52c9d61ff4b005d999027

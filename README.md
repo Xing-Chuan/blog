@@ -4,7 +4,3 @@
 闲来无事，写写网志 (*/ω＼*)
 
 行川的网络日志：https://www.xing-chuan.com/
-
-简书：https://www.jianshu.com/u/01c2879aa7dc
-
-掘金：https://juejin.im/user/58c52c9d61ff4b005d999027
